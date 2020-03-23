@@ -20,5 +20,22 @@ docker run --name mysql5.7 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5
 # firewall-cmd --reload // 重启防火墙
 ```
 
+修改密码
+
+MySQL 5.7.6 以及后续版本：
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+```
+
+
+
+MySQL 5.7.5 以及早期版本：
+
+```
+
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD( '123456');
+```
+
 
 
