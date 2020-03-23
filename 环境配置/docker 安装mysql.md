@@ -16,8 +16,6 @@ docker run --name mysql5.7 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5
 ### 开放端口
 
 ```
-
-
 # firewall-cmd --zone=public --add-port=3306/tcp --permanent
 # firewall-cmd --reload // 重启防火墙
 ```
