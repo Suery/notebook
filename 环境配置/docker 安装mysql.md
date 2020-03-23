@@ -34,5 +34,13 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD( '123456');
 ```
 
+### 远程访问
+
+```
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION
+
+FLUSH PRIVILEGES
+```
+
 
 
