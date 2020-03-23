@@ -45,6 +45,12 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 curl http://download.bt.cn/install/update6.sh|bash
 ```
 
+### 访问
+
+```
+端口默认为8888
+```
+
 ### 上传和下载
 
 * 首先安装lrzsz
