@@ -32,7 +32,7 @@ docker run --detach --name solo --network=host \
 * JDBC\_PASSWORD: 密码
 * hostname: 主机
 * port: 数据库端口
-* --listen\_port: 进程监听端口
+* --listen\_port: 进程监听端口,一般默认访问端口
 * --server\_scheme: 最终访问协议，如果反代服务启用了 HTTPS 这里也需要改为https
 * --server\_host: 最终访问域名或公网 IP，不要带端口
 * --server\_port: 最终访问端口，使用浏览器默认的 80 或者 443 的话值留空即可
