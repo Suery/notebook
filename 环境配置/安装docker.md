@@ -51,8 +51,6 @@ docker ps -a
 
 ![](/assets/azd-1.png)
 
-
-
 ### 停止容器
 
 ```
@@ -61,7 +59,27 @@ docker stop 容器ID ## 上图的有一串字符串的就是容器ID
 
 
 
+### 删除容器
 
+```
+docker rm 容器ID ##  需要先停止容器，才能进行删除
+```
+
+### 查看镜像
+
+```
+docker images
+```
+
+
+
+![](/assets/azd-2.png)
+
+### 删除镜像
+
+```
+docker rmi 镜像ID ##　和删除容器操作差不多
+```
 
 
 
