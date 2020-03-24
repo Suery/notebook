@@ -23,7 +23,7 @@ docker run --detach --name solo --network=host \
     --env JDBC_PASSWORD="fD3JczZ3WeN37bsF" \
     --env JDBC_DRIVER="com.mysql.cj.jdbc.Driver" \
     --env JDBC_URL="jdbc:mysql://hostname :port/solo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true" \
-    b3log/solo --listen_port=8001 --server_scheme=http --server_host=120.27.60.149 --server_port=4000
+    b3log/solo --listen_port=8001 --server_scheme=http --server_host=hostname  --server_port=4000
 ```
 
 ```
