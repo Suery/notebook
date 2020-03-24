@@ -43,5 +43,11 @@ sudo systemctl enable docker
 sudo systemctl start docker
 ```
 
+### 查看容器
+
+```
+docker ps -a
+```
+
 
 
