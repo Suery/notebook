@@ -14,6 +14,8 @@ npm install -g forever
 require('hexo').init({command: 'server'});
 ```
 
+### 运行
+
 之后使用命令`forever start app.js`即可。
 
 查看forever进程命令`forever list`, 更多命令输入`forever -h`
