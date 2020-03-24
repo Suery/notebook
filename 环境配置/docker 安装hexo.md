@@ -4,8 +4,9 @@
 
 ```
 npm install -g forever
-
 ```
+
+### 新建app.js
 
 安装完成，还不能直接用，需要在你的hexo根目录下新建一个js文件，比如app.js,代码如下：
 
