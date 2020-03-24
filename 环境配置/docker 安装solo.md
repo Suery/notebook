@@ -42,10 +42,10 @@ docker run --detach --name solo --network=host \
 如果要使用其他皮肤，可以挂载目录 skins（里面需要包含所需使用的所有皮肤）：
 
 ```
---volume /home/solo/skins:/opt/solo/skins \
+--volume /home/solo/skins:/opt/solo/skins 
+
+--volume /home/solo/images:/opt/solo/images 
 ```
-
-
 
 
 
