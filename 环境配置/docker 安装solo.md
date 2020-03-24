@@ -47,7 +47,7 @@ docker run --detach --name solo --network=host \
 * --server\_host: 最终访问域名或公网 IP，不要带端口
 * --server\_port: 最终访问端口，使用浏览器默认的 80 或者 443 的话值留空即可
 
-#### 皮肤与图片配置
+#### 目录配置
 
 如果要使用其他皮肤，可以挂载目录 skins（里面需要包含所需使用的所有皮肤）：
 
