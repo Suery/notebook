@@ -49,5 +49,19 @@ sudo systemctl start docker
 docker ps -a
 ```
 
+![](/assets/azd-1.png)
+
+
+
+### 停止容器
+
+```
+docker stop 容器ID ## 上图的有一串字符串的就是容器ID
+```
+
+
+
+
+
 
 
