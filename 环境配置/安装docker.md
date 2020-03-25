@@ -49,10 +49,9 @@ sudo systemctl start docker
 rpm -qa|grep docker
 
 yum -y remove  containerd.io.x86_64
-
 ```
 
-### ![](/assets/azd-3.png)
+### ![](/assets/azd-4.png)
 
 ### 
 
