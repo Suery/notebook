@@ -11,6 +11,7 @@
   * [docker 安装hexo](/环境配置/docker 安装hexo.md)
   * [docker 安装solo](/环境配置/docker 安装solo.md)
   * [docker安装Jenkins](/环境配置/docker安装Jenkins.md)
+  * [jenkins 同步 github](/环境配置/jenkins 同步 github.md)
 
 
 
