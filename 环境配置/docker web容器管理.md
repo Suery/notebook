@@ -49,7 +49,7 @@ docker pull dockerclub/shipyard
 * #### 修改安装脚本\(修改为中文镜像\) {#2修改安装脚本修改为中文镜像}
 
 ```
-wget https://shipyard-project.com/deploy
+ wget https://shipyard-project.com/deploy
 grep -n shipyard:latest deploy
 sed -i 's#shipyard/shipyard:latest#dockerclub/shipyard:latest#g' deploy
 
