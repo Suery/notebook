@@ -91,7 +91,42 @@ rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart solo容器
 为什么要执行sql?因为solo已经将文章存入数据库了，我需要将数据库中文章该表清除，这样在后面操作，就不会有残留、
 
 最后重启solo容器，solo会马上读取markdowns目录
+```
 
+
+
+### 美化
+
+* 添加音乐
+
+![](/assets/ｄａｚｓ－１.png)
+
+> 分别所在位置填写如下信息
+
+HTML head：
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+```
+
+
+
+公告：
+
+```
+
+
+<!-- 公告栏可使用 HTML、JavaScript，比如可以在此加入第三方统计 js -->
+
+<div class="aplayer" data-id="4899337473" data-server="netease" data-type="playlist" data-list-folded="true"></div>
+ 
+```
+
+页脚：
+
+```
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
 ```
 
 
