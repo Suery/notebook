@@ -10,6 +10,7 @@
   * [Linux系统安装Python3](/环境配置/Linux系统安装Python3.md)
   * [docker 安装hexo](/环境配置/docker 安装hexo.md)
   * [docker 安装solo](/环境配置/docker 安装solo.md)
+  * [docker安装Jenkins](/环境配置/docker安装Jenkins.md)
 
 
 
