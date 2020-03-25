@@ -55,21 +55,64 @@
 Successfull connection
 ```
 
-
-
 ### GitHub配置
-
-
 
 点击高级选项，然后先配置如下信息
 
-
-
-![](/assets/jtbg-9.png)
-
-
+![](/assets/jtbg-10.png)
 
 * 在Hook URL处的ur记住，这个地址应该填在上面所述的payload url 处
+* 名称:自定义
+* API URL:不能修改
+* 凭据:如下
+
+
+
+![](/assets/jtbg-11.png)
+
+* secret：填写刚才在github生成的密钥
+* ID:自定义
+* 描述:自定义
+
+
+
+### Git配置
+
+![](/assets/jtbg-12.png)
+
+
+
+### 
+
+### Publish over SSH
+
+步骤简单，就不说了
+
+![](/assets/jtbg-13.png)
+
+
+
+### 创建Job
+
+点击首页的新建任务，自定义任务名称，然后选择构建一个自由风格的软件项目
+
+
+
+填写如下
+
+#### github 配置
+
+![](/assets/jtbg-14.png)
+
+#### git 配置
+
+![](/assets/jtbg-15.png)
+
+
+
+
+
+
 
 
 
