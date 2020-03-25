@@ -93,11 +93,11 @@ rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart solo容器
 最后重启solo容器，solo会马上读取markdowns目录
 ```
 
-
-
 ### 美化
 
 * 添加音乐
+
+
 
 ![](/assets/ｄａｚｓ－１.png)
 
@@ -110,17 +110,12 @@ HTML head：
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
 ```
 
-
-
 公告：
 
 ```
-
-
 <!-- 公告栏可使用 HTML、JavaScript，比如可以在此加入第三方统计 js -->
 
 <div class="aplayer" data-id="4899337473" data-server="netease" data-type="playlist" data-list-folded="true"></div>
- 
 ```
 
 页脚：
