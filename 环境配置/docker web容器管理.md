@@ -58,7 +58,7 @@ sed -i 's#shipyard/shipyard:latest#dockerclub/shipyard:latest#g' deploy
 #sed -i 's/PORT:-8080/PORT:-8090/g' deploy
 ```
 
-### 添加node节点
+* ### 添加node节点
 
 ```
 curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172.20.6.20:4001 bash -s
@@ -66,9 +66,9 @@ curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172
 
 上面命令中的172.20.6.20是shipyard的部署机的ip；
 
-### web管理
+* ### web管理
 
-* #### Container管理
+##### Container管理
 
 可以对Container进行重启、停止、暂停、删除、扩展、重命名、提交、查看状态监控/日志、及console登录等。
 
