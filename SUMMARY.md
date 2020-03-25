@@ -12,6 +12,7 @@
   * [docker 安装solo](/环境配置/docker 安装solo.md)
   * [docker安装Jenkins](/环境配置/docker安装Jenkins.md)
   * [jenkins 同步 github](/环境配置/jenkins 同步 github.md)
+  * [docker web容器管理](/环境配置/docker web容器管理.md)
 
 
 
