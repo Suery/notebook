@@ -11,5 +11,37 @@ docker run --name devops-jenkins --user=root \
      -d jenkins/jenkins:lts
 ```
 
+## jenkins配置
+
+### 初始化jenkins及安装插件
+
+* 启动完jenkins后通过浏览器输入地址http://部署jenkins主机IP:端口
+
+  
+![](/assets/dazj-1.png)
+
+* 根据提示从输入administrator password 或者可以通过启动日志
+
+
+
+```
+docker logs devops-jenkins
+```
+
+![](/assets/dazj-2.png)
+
+* 选择安装插件方式，这里我是默认第一个
+
+  
+![](/assets/dazj-3.png)
+
+* 进入插件安装界面，连网等待插件安装
+
+![](/assets/dazj-4.png)  
+
+
+* 安装完插件后，进入创建管理员界面
+
+  
 
 
