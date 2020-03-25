@@ -80,13 +80,13 @@ curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442c600d6a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-* ### Images管理
+##### images管理
 
 可以pull为images打tag
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442c858b5b?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-* ### Nodes管理
+* ###### Nodes管理
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442d8452bf?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
