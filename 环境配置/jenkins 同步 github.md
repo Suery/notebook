@@ -6,11 +6,17 @@
 
 ## 
 
-## 配置github 
+## 配置github
 
 ### webhooks
 
+
+
 ![](/assets/jtbg-1.png)
+
+
+
+
 
 ![](/assets/jtbg-2.png)
 
@@ -18,9 +24,9 @@
 
 ### access tokens
 
-点击在右上角个
+点击在右上角setin
+
+
 
 ![](/assets/jtbg-3.png)
-
-
 
