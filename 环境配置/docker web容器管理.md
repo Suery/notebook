@@ -71,8 +71,6 @@ sh deploy #安装
 curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://hostname:port bash -s
 ```
 
-上面命令中的172.20.6.20是shipyard的部署机的ip；
-
 * ### web管理
 
 ##### Container管理
