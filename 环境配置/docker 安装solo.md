@@ -73,5 +73,14 @@ docker run --detach --name solo --network=host \
 
 请看搜索本笔记 jenkins 相关文章
 
+这是部署好jenkins后，在构建中所填写的执行命令
+
+```
+mysql -h 服务器IP或者服务器网址 -u数据库用户名 -p数据库密码 -P 端口-D数据库名<sql文件所在位置 &&
+rm -rf 挂载的markdowns位置 &&
+cp -rf 自动化部署项目所在位置 挂载的markdowns位置 &&
+rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart 714d4fd01fd9
+```
+
 
 
