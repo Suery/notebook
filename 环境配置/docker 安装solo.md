@@ -79,7 +79,16 @@ docker run --detach --name solo --network=host \
 mysql -h 服务器IP或者服务器网址 -u数据库用户名 -p数据库密码 -P 端口-D数据库名<sql文件所在位置 &&
 rm -rf 挂载的markdowns位置 &&
 cp -rf 自动化部署项目所在位置 挂载的markdowns位置 &&
-rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart 714d4fd01fd9
+rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart solo容器
+```
+
+```
+为什么这样写命令?因为想自动化部署，自动化部署后，由于所在项目没有在理想目录，需要用cp命令进行文件夹复制过去，进行覆盖
+
+
+为什么要进行删除?因为solo下markdowns md格式，已经被solo更改了，用cp覆盖后，还会存在。
+
+为什么要执行sql?因为solo已经将文章存入数据库了，我需要将数据库中文章该表清除，这样在后面操作，就不会有残留、
 ```
 
 
