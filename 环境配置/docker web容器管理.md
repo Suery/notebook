@@ -4,7 +4,7 @@
 
 ## 安装
 
-### shipyard {#daocloud}
+### shipyard
 
 * #### 概述
 
