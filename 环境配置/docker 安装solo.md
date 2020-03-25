@@ -89,6 +89,9 @@ rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart solo容器
 为什么要进行删除?因为solo下markdowns md格式，已经被solo更改了，用cp覆盖后，还会存在。
 
 为什么要执行sql?因为solo已经将文章存入数据库了，我需要将数据库中文章该表清除，这样在后面操作，就不会有残留、
+
+最后重启solo容器，solo会马上读取markdowns目录
+
 ```
 
 
