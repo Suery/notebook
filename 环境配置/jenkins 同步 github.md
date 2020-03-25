@@ -10,6 +10,12 @@
 
 ### webhooks
 
+
+
+> payload url 后面会配置到，等会过来配置
+
+
+
 ![](/assets/jtbg-1.png)
 
 ![](/assets/jtbg-2.png)
@@ -23,10 +29,6 @@
 ![](/assets/jtbg-5.png)
 
 ![](/assets/jtbg-3.png)
-
-
-
-
 
 > 注意，记下当前密钥
 
