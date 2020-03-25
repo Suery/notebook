@@ -123,13 +123,10 @@ Successfull connection
 * SSH SITE:在前面已经配置好了，选中即可
 * Command:这里是远程在服务器命令行中所执行的命令
 
-我将我所执行的命令贴下如下，
+
 
 ```
-mysql -h <ip> -u<username> -<password> -P 33 -Dsolo</home/solo/solo.sql &&
- rm -rf /home/solo/notebook && 
- cp -rf /opt/data/jenkins_home/workspace/notebook  /home/solo && 
- rm -rf /home/solo/notebook/SUMMARY.md && docker restart 714d4fd01fd9
+利用cp命令进行覆盖和rm -rf 删除
 ```
 
 
