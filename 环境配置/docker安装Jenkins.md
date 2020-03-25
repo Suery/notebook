@@ -37,5 +37,7 @@ docker logs devops-jenkins
 
 * 安装完插件后，进入创建管理员界面，按照要求创建账号
 
+### 操作
 
+[http://ip:port/restart/](http://120.27.60.149:8081/updateCenter/)  \# 重启
 
