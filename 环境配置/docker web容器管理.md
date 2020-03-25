@@ -39,10 +39,11 @@ Shipyard也是完全基于Docker API，支持container管理、engine管理（�
 * #### 安装部署
 
 ```
-yum install docker -y && \
-systemctl start docker && \
- curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://d6f11267.m.daocloud.io
-for i in alpine library/rethinkdb microbox/etcd shipyard/docker-proxy swarm shipyard/shipyard;do docker pull $i;done
+docker pull rethinkdb
+docker pull microbox/etcd
+docker pull shipyard/docker-proxy
+docker pull swarm
+docker pull dockerclub/shipyard
 ```
 
 执行安装 `curl -s https://shipyard-project.com/deploy | bash -s`
