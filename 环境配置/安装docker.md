@@ -43,6 +43,19 @@ sudo systemctl enable docker
 sudo systemctl start docker
 ```
 
+### 卸载docker
+
+```
+rpm -qa|grep docker
+
+yum -y remove  containerd.io.x86_64
+
+```
+
+### ![](/assets/azd-3.png)
+
+### 
+
 ### 查看容器
 
 ```
@@ -57,8 +70,6 @@ docker ps -a
 docker stop 容器ID ## 上图的有一串字符串的就是容器ID
 ```
 
-
-
 ### 删除容器
 
 ```
@@ -70,8 +81,6 @@ docker rm 容器ID ##  需要先停止容器，才能进行删除
 ```
 docker images
 ```
-
-
 
 ![](/assets/azd-2.png)
 
