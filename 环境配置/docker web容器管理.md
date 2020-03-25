@@ -50,8 +50,8 @@ docker pull dockerclub/shipyard
 
 ```
  wget https://shipyard-project.com/deploy
-grep -n shipyard:latest deploy
-sed -i 's#shipyard/shipyard:latest#dockerclub/shipyard:latest#g' deploy
+ grep -n shipyard:latest deploy
+ sed -i 's#shipyard/shipyard:latest#dockerclub/shipyard:latest#g' deploy
 
 #若8080端口被使用,需修改端口，改为8090试列
 #grep -n 'PORT:-8080' deploy
