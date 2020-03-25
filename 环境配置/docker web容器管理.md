@@ -53,7 +53,6 @@ shipyard访问页面默认登录用户名：admin，密码：shipyard，登录�
 
 ```
 curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172.20.6.20:4001 bash -s
-
 ```
 
 上面命令中的172.20.6.20是shipyard的部署机的ip；
@@ -81,14 +80,4 @@ curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172
 ### Nodes管理
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442d8452bf?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
-
-其次shipyard还有registries、accounts、events管理。
-
-作者：kaliarch
-
-链接：[https://juejin.im/post/5c7de8905188251ba53afe80](https://juejin.im/post/5c7de8905188251ba53afe80)
-
-来源：掘金
-
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
