@@ -10,13 +10,7 @@
 
 ### webhooks
 
-
-
 ![](/assets/jtbg-1.png)
-
-
-
-
 
 ![](/assets/jtbg-2.png)
 
@@ -24,7 +18,13 @@
 
 ### access tokens
 
-点击在右上角setin
+点击在右上角**settings**，剩下如下操作
+
+
+
+![](/assets/jtbg-5.png)
+
+
 
 
 
