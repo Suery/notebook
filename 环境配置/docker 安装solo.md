@@ -97,8 +97,6 @@ rm -rf 挂载的markdowns位置/SUMMARY.md && docker restart solo容器
 
 * 添加音乐
 
-
-
 ![](/assets/ｄａｚｓ－１.png)
 
 > 分别所在位置填写如下信息
@@ -122,6 +120,25 @@ HTML head：
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+```
+
+
+
+### 额外
+
+由于是从github拉去的项目，图片是相对路径，导致显示不出来，因此，将如下代码，放入上方的页脚处即可
+
+```
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$("#articlePage img").each(function(){
+    var url = $(this).attr("src");
+	url = "https://raw.githubusercontent.com/CoderAngle/notebook/master"+url
+	$(this).attr("src",url );
+	if(url.indexOf("assets") >= 0)
+	console.log(url)
+});
+</script>
 ```
 
 
