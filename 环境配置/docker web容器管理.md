@@ -6,7 +6,7 @@
 
 ### shipyard {#daocloud}
 
-#### 概述
+* #### 概述
 
 Shipyard也是完全基于Docker API，支持container管理、engine管理（一个engine就是监听tcp端口的docker daemon）。
 
@@ -27,7 +27,7 @@ Shipyard也是完全基于Docker API，支持container管理、engine管理（�
 不支持container批量操作。
 ```
 
-#### 相关组件
+* #### 相关组件
 
 > shipyard依赖的容器
 
@@ -36,7 +36,7 @@ Shipyard也是完全基于Docker API，支持container管理、engine管理（�
 * docker-proxy：docker容器网络代理工具
 * swarm：swarm管理器
 
-#### 安装部署
+* #### 安装部署
 
 ```
 yum install docker -y && \
@@ -57,9 +57,9 @@ curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172
 
 上面命令中的172.20.6.20是shipyard的部署机的ip；
 
-## 1.4 web管理
+### web管理
 
-### Container管理
+* #### Container管理
 
 可以对Container进行重启、停止、暂停、删除、扩展、重命名、提交、查看状态监控/日志、及console登录等。
 
@@ -71,13 +71,13 @@ curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442c600d6a?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-### Images管理
+* ### Images管理
 
 可以pull为images打tag
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442c858b5b?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
-### Nodes管理
+* ### Nodes管理
 
 ![](https://user-gold-cdn.xitu.io/2019/3/5/1694bd442d8452bf?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
 
