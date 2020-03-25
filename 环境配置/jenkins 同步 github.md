@@ -123,8 +123,6 @@ Successfull connection
 * SSH SITE:在前面已经配置好了，选中即可
 * Command:这里是远程在服务器命令行中所执行的命令
 
-
-
 ```
 利用cp命令进行覆盖和rm -rf 删除
 ```
