@@ -46,9 +46,17 @@ docker pull swarm
 docker pull dockerclub/shipyard
 ```
 
-执行安装 `curl -s https://shipyard-project.com/deploy | bash -s`
+* #### 修改安装脚本\(修改为中文镜像\) {#2修改安装脚本修改为中文镜像}
 
-shipyard访问页面默认登录用户名：admin，密码：shipyard，登录进去后，可以在"ACCOUNTS"选项里管理用户，可以添加用户，并对用户进行角色授权。
+```
+wget https://shipyard-project.com/deploy
+grep -n shipyard:latest deploy
+sed -i 's#shipyard/shipyard:latest#dockerclub/shipyard:latest#g' deploy
+
+#若8080端口被使用,需修改端口，改为8090试列
+#grep -n 'PORT:-8080' deploy
+#sed -i 's/PORT:-8080/PORT:-8090/g' deploy
+```
 
 ### 添加node节点
 
