@@ -67,5 +67,11 @@ docker run --detach --name solo --network=host \
 --volume /home/solo/images:/opt/solo/images
 ```
 
+### 其他
+
+如果想将github项目部署到solo中
+
+请看搜索本笔记 jenkins 相关文章
+
 
 

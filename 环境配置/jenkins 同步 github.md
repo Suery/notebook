@@ -100,41 +100,25 @@ Successfull connection
 
 #### 配置git凭据
 
-
-
 ![](/assets/jtbg-16.png)
 
 * 用户名:github用户名或者邮箱
 * 密码:github账号密码
 * ID和描述:自定义
 
-
-
 ### 构建触发器
-
-
 
 如图勾选，这样，当本地提交项目到github时，就能够自动触发进行部署
 
 ![](/assets/jtbg-18.png)
 
-
-
 到这样里，就可以已经完成了，自动化部署，等下进行测试
 
 ### 构建
 
-
-
 由于自动化部署的项目，没有部署到理想的路，因此在这里执行远程命令，将项目移动正确的位置
 
-
-
 ![](/assets/jbtg-19.png)
-
-
-
-
 
 * SSH SITE:在前面已经配置好了，选中即可
 * Command:这里是远程在服务器命令行中所执行的命令
@@ -142,7 +126,7 @@ Successfull connection
 我将我所执行的命令贴下如下，
 
 ```
-mysql -h 120.27.60.149 -uroot -pCL6ABhYLdDtJiPZm -P 3306 -Dsolo</home/solo/solo.sql &&
+mysql -h <ip> -u<username> -<password> -P 33 -Dsolo</home/solo/solo.sql &&
  rm -rf /home/solo/notebook && 
  cp -rf /opt/data/jenkins_home/workspace/notebook  /home/solo && 
  rm -rf /home/solo/notebook/SUMMARY.md && docker restart 714d4fd01fd9
