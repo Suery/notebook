@@ -39,5 +39,10 @@ docker logs devops-jenkins
 
 ### 操作
 
-[http://ip:port/restart/](http://120.27.60.149:8081/updateCenter/)  \# 重启
+```
+http://ip:port/restart/ # 重启
+http://ip:port/exit/ # 关闭
+```
+
+
 
