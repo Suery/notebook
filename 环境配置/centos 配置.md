@@ -1,7 +1,7 @@
 ### 修改主机名
 
 ```
-hostname <hostname>
+hostname <hostname> # hostname 是主机名 # 这个方法重启系统后就会失效
 ```
 
 ## 安装nodejs
