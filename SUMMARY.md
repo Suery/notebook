@@ -1,6 +1,6 @@
 # Summary
 
-* [介绍](/介绍.md)
+* 介绍
 * [环境配置](环境配置/README.md)
   * [docker 安装mysql](/环境配置/docker 安装mysql.md)
   * [安装docker](环境配置/安装docker.md)
