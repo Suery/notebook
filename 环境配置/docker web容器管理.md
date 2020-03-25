@@ -58,10 +58,17 @@ sed -i 's#shipyard/shipyard:latest#dockerclub/shipyard:latest#g' deploy
 #sed -i 's/PORT:-8080/PORT:-8090/g' deploy
 ```
 
+* ### 安装
+
+```
+sh deploy #安装
+#cat deploy | ACTION=remove bash  #删除
+```
+
 * ### 添加node节点
 
 ```
-curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://172.20.6.20:4001 bash -s
+curl -sSL https://shipyard-project.com/deploy | ACTION=node DISCOVERY=etcd://hostname:port bash -s
 ```
 
 上面命令中的172.20.6.20是shipyard的部署机的ip；
