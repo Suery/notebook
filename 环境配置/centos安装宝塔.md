@@ -24,7 +24,7 @@ curl http://download.bt.cn/install/update6.sh|bash
 
 * 如果用的是阿里云之类的，去打开相关端口配置
 * 然后放行宝塔端口
-* 进入mysql中
+* 进入mysql中，输入如下即可
 
 ```
 grant all on *.* to root@'%' identified by '这是你mysql密码' with grant option;
