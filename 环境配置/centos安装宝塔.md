@@ -28,6 +28,8 @@ curl http://download.bt.cn/install/update6.sh|bash
 
 ```
 grant all on *.* to root@'%' identified by '这是你mysql密码' with grant option;
+
+flush privileges;
 ```
 
 
