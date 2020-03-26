@@ -30,7 +30,11 @@ docker run -p 80:80 --name mynginx -v $PWD/www:/www -v $PWD/conf/nginx.conf:/etc
 
   * 主机目录映射到容器目录
 
-* 查看运行情况
+## 查看运行情况
 
+```
 docker ps
+```
+
+
 
