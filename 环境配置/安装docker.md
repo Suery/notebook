@@ -58,7 +58,6 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
-
 ```
 
 或者
@@ -73,12 +72,9 @@ vim /etc/docker/daemon.json
         "http://f1361db2.m.daocloud.io",
         "https://registry.docker-cn.com"/etc/docker/daemon.json
 }
-
 ```
 
 ## Docker Hub 镜像加速器列表
-
-
 
 ### 卸载docker
 
@@ -92,7 +88,6 @@ yum -y remove  containerd.io.x86_64
 
 ```
 镜像加速器地址
-
 ```
 
 | 镜像加速器 | 镜像加速器地址 | 专属加速 | 其他加速 |
@@ -106,25 +101,15 @@ yum -y remove  containerd.io.x86_64
 | [网易云](https://c.163yun.com/hub) | `https://hub-mirror.c.163.com` |  | Docker Hub |
 | [腾讯云](https://cloud.tencent.com/document/product/457/9113) | `https://mirror.ccs.tencentyun.com` |  | Docker Hub |
 
-  
+## 检查加速器是否生效
 
+命令行执行`docker info`，如果从结果中看到了如下内容，说明配置成功。
 
-作者：y0ngb1n
-
-  
-
-
-链接：https://juejin.im/post/5cd2cf01f265da0374189441
-
-  
-
-
-来源：掘金
-
-  
-
-
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+Registry Mirrors:
+ [...]
+ https://registry.docker-cn.com/
+```
 
 ### 查看容器
 
