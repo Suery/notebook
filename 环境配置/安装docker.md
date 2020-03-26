@@ -36,7 +36,7 @@ curl -fsSL get.docker.com -o get-docker.sh
 sudo sh get-docker.sh --mirror Aliyun
 ```
 
-## 启动 Docker CE {#启动-docker-ce}
+## 启动 Docker CE
 
 ```
 sudo systemctl enable docker
