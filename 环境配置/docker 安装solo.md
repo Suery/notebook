@@ -16,7 +16,7 @@ docker pull b3log/solo
 
 ### 启动容器
 
-需要提前在数据库里创建solo库
+需要提前在数据库里创建名称为solo的数据库
 
 ```
 docker run --detach --name solo --network=host \
