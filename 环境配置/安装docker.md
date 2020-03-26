@@ -43,6 +43,43 @@ sudo systemctl enable docker
 sudo systemctl start docker
 ```
 
+### 配置docker加速器
+
+```
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+    "registry-mirrors": [
+        "https://1nj0zren.mirror.aliyuncs.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "http://f1361db2.m.daocloud.io",
+        "https://registry.docker-cn.com"/etc/docker/daemon.json
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+```
+
+或者
+
+```
+vim /etc/docker/daemon.json
+
+{
+    "registry-mirrors": [
+        "https://1nj0zren.mirror.aliyuncs.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "http://f1361db2.m.daocloud.io",
+        "https://registry.docker-cn.com"/etc/docker/daemon.json
+}
+
+```
+
+## Docker Hub 镜像加速器列表
+
+
+
 ### 卸载docker
 
 ```
@@ -53,7 +90,41 @@ yum -y remove  containerd.io.x86_64
 
 ### ![](/assets/azd-4.png)
 
-### 
+```
+镜像加速器地址
+
+```
+
+| 镜像加速器 | 镜像加速器地址 | 专属加速 | 其他加速 |
+| :--- | :--- | :--- | :--- |
+| [Docker 中国官方镜像](https://docker-cn.com/registry-mirror) | `https://registry.docker-cn.com` |  | Docker Hub |
+| [DaoCloud 镜像站](https://daocloud.io/mirror) | `http://f1361db2.m.daocloud.io` | 可登录，系统分配 | Docker Hub |
+| [Azure 中国镜像](https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md#22-container-registry-proxy) | `https://dockerhub.azk8s.cn` |  | Docker Hub、GCR、Quay |
+| [科大镜像站](https://mirrors.ustc.edu.cn/help/dockerhub.html) | `https://docker.mirrors.ustc.edu.cn` |  | Docker Hub、[GCR](https://github.com/ustclug/mirrorrequest/issues/91)、[Quay](https://github.com/ustclug/mirrorrequest/issues/135) |
+| [阿里云](https://cr.console.aliyun.com) | `https://<your_code>.mirror.aliyuncs.com` | 需登录，系统分配 | Docker Hub |
+| [七牛云](https://kirk-enterprise.github.io/hub-docs/#/user-guide/mirror) | `https://reg-mirror.qiniu.com` |  | Docker Hub、GCR、Quay |
+| [网易云](https://c.163yun.com/hub) | `https://hub-mirror.c.163.com` |  | Docker Hub |
+| [腾讯云](https://cloud.tencent.com/document/product/457/9113) | `https://mirror.ccs.tencentyun.com` |  | Docker Hub |
+
+  
+
+
+作者：y0ngb1n
+
+  
+
+
+链接：https://juejin.im/post/5cd2cf01f265da0374189441
+
+  
+
+
+来源：掘金
+
+  
+
+
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 ### 查看容器
 
