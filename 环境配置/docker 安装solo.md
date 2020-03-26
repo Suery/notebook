@@ -16,11 +16,13 @@ docker pull b3log/solo
 
 ### 启动容器
 
+需要提前在数据库里创建solo数据库
+
 ```
 docker run --detach --name solo --network=host \
     --env RUNTIME_DB="MYSQL" \
     --env JDBC_USERNAME="solo" \
-    --env JDBC_PASSWORD="fD3JczZ3WeN37bsF" \
+    --env JDBC_PASSWORD="数据库密码" \
     --env JDBC_DRIVER="com.mysql.cj.jdbc.Driver" \
     --env JDBC_URL="jdbc:mysql://hostname :port/solo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true" \
     b3log/solo --listen_port=8001 --server_scheme=http --server_host=hostname  --server_port=4000
@@ -122,8 +124,6 @@ HTML head：
 <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
 ```
 
-
-
 ### 额外
 
 由于是从github拉去的项目，图片是相对路径，导致显示不出来，因此，将如下代码，放入上方的页脚处即可
@@ -133,10 +133,10 @@ HTML head：
 <script>
 $("#articlePage img").each(function(){
     var url = $(this).attr("src");
-	url = "https://raw.githubusercontent.com/CoderAngle/notebook/master"+url
-	$(this).attr("src",url );
-	if(url.indexOf("assets") >= 0)
-	console.log(url)
+    url = "https://raw.githubusercontent.com/CoderAngle/notebook/master"+url
+    $(this).attr("src",url );
+    if(url.indexOf("assets") >= 0)
+    console.log(url)
 });
 </script>
 ```
