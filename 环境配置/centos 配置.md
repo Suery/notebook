@@ -4,6 +4,26 @@
 hostname <hostname> # hostname 是主机名 # 这个方法重启系统后就会失效
 ```
 
+或者
+
+```
+vim /etc/profile
+```
+
+添加如下:
+
+```
+export HOSTNAME='XXX'
+```
+
+然后刷新
+
+```
+source /etc/profile
+```
+
+重启即可或者打开新会话
+
 ## 上传和下载
 
 * 首先安装lrzsz
