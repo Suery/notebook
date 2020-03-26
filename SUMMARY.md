@@ -15,6 +15,7 @@
   * [docker web容器管理](/环境配置/docker web容器管理.md)
   * [centos安装宝塔](/环境配置/centos安装宝塔.md)
   * [node 配置](/环境配置/node 配置.md)
+  * [docker 安装nginx 并个性化配置](/环境配置/docker 安装nginx 并个性化配置.md)
 
 
 
