@@ -24,7 +24,7 @@ docker run -p 80:80 --name mynginx -v $PWD/www:/www -v $PWD/conf/nginx.conf:/etc
 
 ```
 -v xxx/www:/www：将主机中当前目录下的xxx挂载到容器的/www
--v xxx/conf/nginx.conf:/etc/nginx/nginx.conf
+-v xxx/conf/nginx.conf:/etc/nginx/nginx.conf # 同理
 ```
 
 * -p 主机port:容器port：
