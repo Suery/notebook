@@ -18,13 +18,11 @@ docker run -p 80:80 --name mynginx -v $PWD/www:/www -v $PWD/conf/nginx.conf:/etc
 
 命令说明：
 
-
-
-* -v path:path
+* -v 主机path:容器path
 
   * 主机目录映射到容器目录
 
-* -p 80:80：
+* -p 主机port:容器port：
 
   * 将容器的端口映射到主机的端口
 
