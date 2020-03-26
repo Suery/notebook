@@ -32,7 +32,7 @@ docker run --detach --name solo --network=host \
 docker run --detach --name solo --network=host \
     --env RUNTIME_DB="MYSQL" \
     --env JDBC_USERNAME="root" \
-    --env JDBC_PASSWORD="CL6ABhYLdDtJiPZm" \
+    --env JDBC_PASSWORD="xxx" \
     --env JDBC_DRIVER="com.mysql.cj.jdbc.Driver" \
     --env JDBC_URL="jdbc:mysql://hostname:port/solo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC" \
     --volume /home/solo/skins:/opt/solo/skins   \
